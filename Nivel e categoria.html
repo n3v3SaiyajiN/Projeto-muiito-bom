@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>O Meu Quiz - Bootstrap test</title>
+</head>
+<script >
+    $(document).ready(function(){
+
+        document.getElementById("result").innerHTML ="Bem Vindo(a) " + localStorage.getItem("lastname");
+    });
+</script>
+<body style="background-color:grey;">
+<div class="bem" align="center" id="result"></div>
+<form onsubmit="enviar();" action="Nivel e categoria.html">
+
+    <div class="Nivel text-center">
+        <h1>Opcões do Jogo</h1>
+        <p>Niveis</p>
+
+        <button type="button" onclick="window.location.href='Categoria.html'" class="button">Fácil</button>
+
+        <button type="button" onclick="window.location.href='Categoria dificil.html'" class="button">Dificil</button>
+
+    </div>
+
+
+
+</body>
+</html>

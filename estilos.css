@@ -1,0 +1,22 @@
+
+.button{
+    padding:10px 15px;
+    font-size: 10px;
+    background-color: #f65a01;
+    border: 2px solid red;
+    border-radius: 12px;
+    box-shadow: 0 5px grey;
+
+}
+.button:hover{
+    background-color: indianred
+}
+
+.bem{
+    color: #f65a01;
+    font-size: 50px;
+}
+.Nivel{
+    font-size: 25px;
+
+}

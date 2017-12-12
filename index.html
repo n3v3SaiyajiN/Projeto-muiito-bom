@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Programação Web-Cliente</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    function enviar() {
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+            // Store
+
+            localStorage.setItem("lastname",$("#name").val() );
+        }
+    }
+</script>
+
+<style>
+</style>
+
+<body align="center">
+<h1>Bem Vindo(a)</h1>
+
+<div  id="result"></div>
+<form onsubmit="enviar();" action="Nivel e categoria.html">
+    <p>Escreva o seu nome</p>
+    <input type="text" id="name">
+    <input  class=button type="Submit" value="Submit"/>
+
+</form>
+
+
+
+
+
+
+</body>
+</html>
